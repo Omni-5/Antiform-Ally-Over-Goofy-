@@ -6,10 +6,10 @@ assets:
    method: copy
    source:
      - name: obj/P_EX030.mdlx
- - name: obj/P_EX030.a.us
+ - name: obj/P_EX030.a.fm
    method: copy
    source:
-     - name: obj/P_EX030.a.us
+     - name: obj/P_EX030.a.fm
  - name: obj/P_EX030.mset
    method: copy
    source:
@@ -22,10 +22,10 @@ assets:
    method: copy
    source:
      - name: obj/W_EX030.mset
- - name: obj/W_EX030.a.us
+ - name: obj/W_EX030.a.fm
    method: copy
    source:
-     - name: obj/W_EX030.a.us
+     - name: obj/W_EX030.a.fm
  - name: 03system.bin
    method: binarc
    source:
@@ -35,3 +35,13 @@ assets:
        source:
        - name: SkltList.yml
          type: sklt
+ - name: 00battle.bin
+   method: binarc
+   source:
+     - name: atkp 
+       type: list
+       method: listpatch
+       source:
+       - name: AtkpList.yml
+         type: atkp
+
